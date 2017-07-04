@@ -15,3 +15,29 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+.navbar{
+ font-family: 'Raleway', sans-serif;
+ font-size: 18px;
+ color: Grey;
+ background-color: WhiteSmoke;
+ position: relative;
+ min-height: 50px;
+ border: 1px solid transparent;
+}
+
+.navbar-default {
+  border-bottom-color: #FF6347;
+}
+
+.container {
+  background-color: whiteSmoke;
+
+}
+h1 {
+  padding-top: 100px;
+  margin-bottom: 10px;
+
+
+
+}
