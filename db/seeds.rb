@@ -10,7 +10,7 @@ User.destroy_all
 Theme.destroy_all
 
 family = Theme.create(name: "Family")
-sport_and_health = Theme.create(name: "Sport and Helath")
+sport_and_health = Theme.create(name: "Sport and Health")
 advanture = Theme.create(name: "Adventure")
 elderly = Theme.create(name: "Elderly")
 creative = Theme.create(name: "Creative")

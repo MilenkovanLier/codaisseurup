@@ -26,3 +26,5 @@
       <li><%= !@event.active ? ("<s>Active</s>").html_safe : "Active" %></li>
     </ul>
    </div>
+
+   <%= link_to "Back", events_path, class: "btn btn-default" %>

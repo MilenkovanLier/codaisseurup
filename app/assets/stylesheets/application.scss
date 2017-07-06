@@ -23,11 +23,16 @@
  background-color: WhiteSmoke;
  position: relative;
  min-height: 50px;
- border: 1px solid transparent;
+ border: 3px solid transparent;
 }
 
 .navbar-default {
   border-bottom-color: #FF6347;
+}
+
+.navbar-left {
+  margin: auto;
+  margin: inherit;
 }
 
 .container {
@@ -37,7 +42,4 @@
 h1 {
   padding-top: 100px;
   margin-bottom: 10px;
-
-
-
 }
