@@ -8,6 +8,8 @@
 
 User.destroy_all
 Theme.destroy_all
+Profile.destroy_all
+Photo.destroy_all
 
 family = Theme.create(name: "Family")
 sport_and_health = Theme.create(name: "Sport and Health")
@@ -32,3 +34,6 @@ ends_at: 2100,
 active: true,
 user: miriam,
 themes: [family, sport_and_health])
+
+photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/dg0ggdv9r/image/upload/v1499348242/images_xsfuw4.jpg", event: event)
+photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/dg0ggdv9r/image/upload/v1499348235/Sa_Cova_cropped_1_kzztcl.jpg", event: event)

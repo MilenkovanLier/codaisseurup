@@ -6,7 +6,9 @@ class EventsController < ApplicationController
      @events = current_user.events
    end
 
-   def show; end
+   def show
+     @photos = event.photos
+   end
 
    def new
      @event = current_user.events.build
