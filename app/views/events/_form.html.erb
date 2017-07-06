@@ -1,19 +1,23 @@
 <%= form_for @event do |f| %>
+<div class="form-group">
+  <label>Name Event</label>
+  <%= f.text_area :name, rows: 1, placeholder: "Name Your Event", class: "form-control" %>
+</div>
+
   <div class="form-group">
     <label>Event Type</label>
-    <%= f.select :name, [["Tech", "Tech"], ["Familie", "Familie"], ["Sport & Fitne", "Bed & Breakfast"]], id: "home_type", prompt: "Select home type", class: "form-control" %>
+    <%= f.select :name, [["Tech", "Tech"], ["Familie", "Familie"], ["Sport & Health", "Sport & Health"]], id: "event_type", prompt: "Select event type", class: "form-control" %>
   </div>
 
   <div class="form-group">
     <label>Number of People</label>
-    <%= f.select :capacity, [["1", 1], ["2", 2], ["3", 3], ["4", 4], ["5", 5], ["6+", 6]], prompt: "Select number of people", class: "form-control" %>
+    <%= f.select :capacity, [["2-5", 1], ["6-8", 2], ["9-12", 3], ["12-15", 4], ["15-18", 5], ["19 +", 6]], prompt: "Select number of people", class: "form-control" %>
   </div>
 
   <div class="form-group">
     <label>Price Range</label>
-    <%= f.select :price, [["10", 10], ["20", 20], ["30", 30], ["40+", 40]], prompt: "Select Price Range", class: "form-control" %>
+    <%= f.select :price, [["€ 10", 10], ["€ 20", 20], ["€ 30", 30], ["€ 40+", 40]], prompt: "Select Price Range", class: "form-control" %>
   </div>
-
 
 
   <div class="form-group">
@@ -46,5 +50,4 @@
 
   <div class="actions">
     <%= f.submit "Save", class: "btn btn-primary" %>
-  </div>
-<% end %>
+      <% end %>

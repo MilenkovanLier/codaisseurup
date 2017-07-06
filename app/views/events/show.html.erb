@@ -17,6 +17,7 @@
     <h4>About</h4>
     <p><%= @event.description %></p>
 
+
     <!-- Amenities -->
     <h4>Amenities</h4>
     <ul class="amenities">
@@ -24,9 +25,4 @@
       <li><%= !@event.includes_drinks ? ("<s>Drinks</s>").html_safe : "Including Drinks" %></li>
       <li><%= !@event.active ? ("<s>Active</s>").html_safe : "Active" %></li>
     </ul>
-
-  </div>
-
-</div>
-
-<%= link_to "Back", events_path, class: "btn btn-default" %>
+   </div>
